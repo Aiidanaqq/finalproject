@@ -4,46 +4,57 @@
 #include <vector>
 #include <string>
 
+using namespace std;
+
 struct FitnessActivity {
-    std::string date;
-    std::string type;
+    string date;
+    string type;
     int duration; // in minutes
 };
 
-void addRecord(std::ostream& file, const FitnessActivity& activity) {
+void addRecord(ostream& file, const FitnessActivity& activity) {
     file << activity.date << "," << activity.type << "," << activity.duration << "\n";
 }
 
-void displayRecords(const std::vector<FitnessActivity>& activities) {
+void displayRecords(const vector<FitnessActivity>& activities) {
     if (activities.empty()) {
-        std::cout << "No records found.\n";
+        cout << "No records found.\n";
         return;
     }
     for (const auto& activity : activities) {
-        std::cout << "Date: " << activity.date << ", Type: " << activity.type << ", Duration: " << activity.duration << " minutes\n";
+        cout << "Date: " << activity.date << ", Type: " << activity.type << ", Duration: " << activity.duration << " minutes\n";
     }
 }
 
 int main() {
-    // Open file for reading and writing
-    std::fstream dataFile("fitness_data.csv", std::ios::in | std::ios::out | std::ios::app);
+    string filename;
+    cout << "Enter filename to save fitness data: ";
+    cin >> filename;
+
+    fstream dataFile(filename, ios::in | ios::out | ios::app);
 
     if (!dataFile.is_open()) {
-        std::cerr << "Error: Unable to open file for reading and writing.\n";
+        cerr << "Error: Unable to open file for reading and writing.\n";
         return 1;
     }
 
-    // Example: Add a new record
-    FitnessActivity newActivity = {"2024-04-29", "Workout", 60};
+    string workoutType;
+    cout << "Enter workout type: ";
+    cin >> workoutType;
+
+    int duration;
+    cout << "Enter duration (in minutes): ";
+    cin >> duration;
+
+    FitnessActivity newActivity = {"2024-04-29", workoutType, duration};
     addRecord(dataFile, newActivity);
 
-    // Read records from file and display
-    dataFile.seekg(0); // Move cursor to the beginning of the file
-    std::vector<FitnessActivity> activities;
-    std::string line;
-    while (std::getline(dataFile, line)) {
-        std::istringstream iss(line);
-        std::string date, type;
+    dataFile.seekg(0);
+    vector<FitnessActivity> activities;
+    string line;
+    while (getline(dataFile, line)) {
+        istringstream iss(line);
+        string date, type;
         int duration;
         char comma;
         if (iss >> date >> comma >> type >> comma >> duration) {
@@ -51,10 +62,9 @@ int main() {
         }
     }
 
-    // Display all records
     displayRecords(activities);
 
-    dataFile.close(); // Close the file
+    dataFile.close();
 
     return 0;
 }
