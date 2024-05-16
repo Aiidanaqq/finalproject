@@ -75,6 +75,7 @@ When exiting, the program will display a goodbye message with your name.
 ## SCREENSHOTS
 
 1.Main menu:
+<img width="582" alt="Снимок экрана 2024-05-16 в 12 20 42" src="https://github.com/Aiidanaqq/finalproject/assets/150505764/ec749ef9-4afc-42ae-b015-75371aa0ca37">
 
 
 
