@@ -75,7 +75,56 @@ When exiting, the program will display a goodbye message with your name.
 ## SCREENSHOTS
 
 1.Main menu:
-<img width="582" alt="Снимок экрана 2024-05-16 в 12 20 42" src="https://github.com/Aiidanaqq/finalproject/assets/150505764/ec749ef9-4afc-42ae-b015-75371aa0ca37">
+
+
+<img width="582" alt="Снимок экрана 2024-05-16 в 12 20 42" src="https://github.com/Aiidanaqq/finalproject/assets/150505764/ec749ef9-4afc-42ae-b015-75371aa0ca37"> 
+
+
+
+
+
+2.Choose a workout:
+
+
+<img width="557" alt="Снимок экрана 2024-05-16 в 12 40 40" src="https://github.com/Aiidanaqq/finalproject/assets/150505764/e806696c-3e5a-4776-b70f-3e732600ecfb">
+
+
+
+
+3.Choose a timing:
+
+
+<img width="589" alt="Снимок экрана 2024-05-16 в 12 42 18" src="https://github.com/Aiidanaqq/finalproject/assets/150505764/98d0df16-fbab-4bc2-85b0-f0cd61763f8a">
+
+
+
+4.Result:
+
+
+
+<img width="846" alt="Снимок экрана 2024-05-16 в 12 44 28" src="https://github.com/Aiidanaqq/finalproject/assets/150505764/478e729c-69fe-429d-a50f-b8865d80c3e8">
+
+
+
+5.Saving by the request of the client(Y/N):
+
+
+<img width="703" alt="Снимок экрана 2024-05-16 в 12 48 35" src="https://github.com/Aiidanaqq/finalproject/assets/150505764/b36e322f-5465-4f7a-8611-32e44dbd1031">
+
+
+6.Exiting by the request of the client(Y/N):
+
+
+<img width="587" alt="Снимок экрана 2024-05-16 в 12 53 04" src="https://github.com/Aiidanaqq/finalproject/assets/150505764/5a3e6614-2540-4b85-8ba6-f588c643d64c">
+
+
+<img width="665" alt="Снимок экрана 2024-05-16 в 12 54 17" src="https://github.com/Aiidanaqq/finalproject/assets/150505764/edf7020b-d213-448e-a9cd-cba99d334053">
+
+
+
+
+
+
 
 
 
